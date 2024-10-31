@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean There Coffee - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+ 
+    <header class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo">Bean There Coffee</a>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>                
+                    <li><a href="#" class="cart-icon">
+                        <img src="cart.png" alt="Cart">
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <div class="background-layer"></div>
+
+        <div id="cartModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Your Cart</h2>
+                <div class="cart-items">
+                    <!-- Sample Cart Items -->
+                    <div class="cart-item">
+                        <img src="waffle.jpg" alt="Food Item 1">
+                        <div class="item-info">
+                            <p class="item-name">Waffle</p>
+                            <p class="item-quantity">Quantity: 1</p>
+                            <p class="item-price">₱75.00</p>
+                        </div>
+                    </div>
+    
+                    <div class="cart-item">
+                        <img src="Strawberry Waffle.jpg" alt="Food Item 1">
+                        <div class="item-info">
+                            <p class="item-name">Strawberry Waffle</p>
+                            <p class="item-quantity">Quantity: 1</p>
+                            <p class="item-price">₱89.00</p>
+                        </div>
+                    </div>
+    
+                    <div class="cart-item">
+                        <img src="images/menu/matcha.jpg" alt="Food Item 1">
+                        <div class="item-info">
+                            <p class="item-name">Iced Matcha</p>
+                            <p class="item-quantity">Quantity: 1</p>
+                            <p class="item-price">₱199.00</p>
+                        </div>
+                    </div>
+                 
+                    
+                </div>
+                <div class="cart-total">
+                    <p>Total: ₱363.00</p>
+                    <button class="btn checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+
+
+        <section id="best-sellers" class="best-sellers">
+            <div class="container">
+              <h2>Our Best Sellers</h2>
+              <div class="products-grid">
+                <div class="product-item">
+                  <img src="waffle.jpg" alt="Best Seller Coffee 1">
+                  <h3>Waffle</h3>
+                  <p>Crispy, Golden, Perfect - Waffle Heaven Awaits!</p>
+                </div>
+                <div class="product-item">
+                  <img src="Strawberry Waffle.jpg" alt="Best Seller Coffee 2">
+                  <h3>Strawberry Waffle</h3>
+                  <p>Sweet, Fresh, and Fluffy - Dive into Our Strawberry Waffle Bliss!</p>
+                </div>
+                <div class="product-item">
+                  <img src="cheesecake.jpg" alt="Best Seller Coffee 3">
+                  <h3>Cheesecake</h3>
+                  <p>Creamy Indulgence - Taste the Classic Cheesecake Delight!</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <section id="menu" class="menu-items">
+            <h2>Our Menu Items</h2>
+            <div class="menu-categories">
+                <button class="category-btn" onclick="showCategory('food')">Food</button>
+                <button class="category-btn" onclick="showCategory('hot-beverages')">Hot Beverages</button>
+                <button class="category-btn" onclick="showCategory('cold-beverages')">Cold Beverages</button>
+            </div>
+            <div id="food" class="category-content">
+                <!-- Sample Food Items -->
+                <div class="menu-item">
+                    <div class="photo"><img src="waffle.jpg" alt="Food Item 1"></div>
+                    <div class="product-info">
+                        <p>Waffle</p>
+
+                    </div>
+                    <div class="price">₱75.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+               
+                <div class="menu-item">
+                    <div class="photo"><img src="Strawberry Waffle.jpg" alt="Food Item 1"></div>
+                    <div class="product-info">
+                        <p>Strawberry Waffle</p>
+                    </div>
+                    <div class="price">₱89.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                   
+                <div class="menu-item">
+                    <div class="photo"><img src="Cinnamonroll.jpg" alt="Food Item 1"></div>
+                    <div class="product-info">
+                        <p>Cinnamon Roll</p>
+                    </div>
+                    <div class="price">₱100.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                   
+                <div class="menu-item">
+                    <div class="photo"><img src="lemonpie.jpg" alt="Food Item 1"></div>
+                    <div class="product-info">
+                        <p>Lemon Pie</p>
+                    </div>
+                    <div class="price">₱89.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                   
+                <div class="menu-item">
+                    <div class="photo"><img src="Croissant.jpg" alt="Food Item 1"></div>
+                    <div class="product-info">
+                        <p>Croissant</p>
+                    </div>
+                    <div class="price">₱100.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                   
+                <div class="menu-item">
+                    <div class="photo"><img src="cheesecake.jpg" alt="Food Item 1"></div>
+                    <div class="product-info">
+                        <p>Cheesecake</p>
+                    </div>
+                    <div class="price">₱100.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+              
+            </div>
+            <div id="hot-beverages" class="category-content" style="display:none;">
+                <!-- Sample Hot Beverages Items -->
+                <div class="menu-item">
+                    <div class="photo"><img src="images/menu/Espresso.jpg" alt="Hot Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Espresso</p>
+                       
+                    </div>
+                    <div class="price">₱169.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                <div class="menu-item">
+                    <div class="photo"><img src="americano.jpg" alt="Hot Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Americano</p>
+                   
+                    </div>
+                    <div class="price">₱169.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                <div class="menu-item">
+                    <div class="photo"><img src="Cappuccino.jpg" alt="Hot Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Cappuccino</p>
+                    
+                    </div>
+                    <div class="price">₱169.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                <div class="menu-item">
+                    <div class="photo"><img src="cafe latte.jpg" alt="Hot Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Cafe latte</p>
+                     
+                    </div>
+                    <div class="price">₱169.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                <div class="menu-item">
+                    <div class="photo"><img src="mocha.jpg" alt="Hot Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Mocha</p>
+                     
+                    </div>
+                    <div class="price">₱169.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                <div class="menu-item">
+                    <div class="photo"><img src="Espresso-Macchiato.jpg" alt="Hot Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Espresso Macchiato</p>
+                       
+                    </div>
+                    <div class="price">₱169.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+              
+            </div>
+            <div id="cold-beverages" class="category-content" style="display:none;">
+                <!-- Sample Cold Beverages Items -->
+                <div class="menu-item">
+                    <div class="photo"><img src="images/menu/matcha.jpg" alt="Cold Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Iced Matcha</p>
+                    
+                    </div>
+                    <div class="price">₱199.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                <div class="menu-item">
+                    <div class="photo"><img src="images/menu/iced americano.jpg" alt="Cold Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Iced Americano</p>
+                    
+                    </div>
+                    <div class="price">₱199.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                <div class="menu-item">
+                    <div class="photo"><img src="images/menu/iced latte.jpg" alt="Cold Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Iced Latte</p>
+                   
+                    </div>
+                    <div class="price">₱199.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                <div class="menu-item">
+                    <div class="photo"><img src="images/menu/NitroColdBrew.jpg" alt="Cold Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Iced Nitro Cold Brew</p>
+                       
+                    </div>
+                    <div class="price">₱199.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                <div class="menu-item">
+                    <div class="photo"><img src="images/menu/Iced White Chocolate Mocha.jpg" alt="Cold Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Iced White Chocolate Mocha</p>
+                      
+                    </div>
+                    <div class="price">₱199.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+
+                <div class="menu-item">
+                    <div class="photo"><img src="images/menu/Iced Caramel Macchiato.jpg" alt="Cold Beverage 1"></div>
+                    <div class="product-info">
+                        <p>Iced Caramel Macchiato</p>
+                       
+                    </div>
+                    <div class="price">₱199.00</div>
+                    <button class="order-now">Order Now</button>
+                </div>
+                <!-- Repeat .menu-item as needed -->
+            </div>
+
+            
+            
+        </section>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="company-info">
+                    <h3 style="font-size: 27px;">Bean There Coffee</h3>
+                    <p>Life begins after coffee, though at Bean There Coffee,</p>
+                    <p>it's more than just a drink—it's an experience!</p>
+                </div>
+                <div class="contact-info">
+                    <h3 style="font-size: 27px;">Contact Us</h3>
+                    <p>Address: 12356 Coffee Street, Brgy Makinabang Baliuag Bulacan</p>
+                    <p>Phone Number: (63)+955-999-8888</p>
+                    <p>Email: BeanThereCoffee@gmail.com</p>
+                </div>
+                <div class="socials">
+                    <h3 style="font-size: 27px;">Socials</h3>
+                    <p>
+                        <a href="https://www.facebook.com">
+                            <img src="images/fb-logo.png">
+                            Facebook
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.instagram.com">
+                            <img src="images/Ig-logo.png">
+                            Instagram
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://www.youtube.com">
+                            <img src="images/youtube-logo.png">
+                            Youtube
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://twitter.com">
+                            <img src="images/twitter-logo.png">
+                            Twitter
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <p>&copy; 2024 Bean There Coffee. All rights reserved | Designed by Jasper James Paragas</p>
+        </footer>
+        
+
+        <script src="script.js"></script>
+        
+    </div>
+</body>
+</html>
